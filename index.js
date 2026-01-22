@@ -48,7 +48,7 @@ if (!token) {
 const bot = new TelegramBot(token, { polling: true });
 
 // Constants
-const REWARD_AMOUNT = 20; // 500 coins or whatever unit you use, example uses 20
+const REWARD_AMOUNT = 20; // 20 coins or whatever unit you use, example uses 20
 const WELCOME_IMAGE = "https://i.postimg.cc/R0pYzGgX/46455093-32b0-4713-858a-bdd647a3602a.jpg";
 
 // ---------------------------------------------------------
@@ -171,7 +171,7 @@ Tap START and your journey begins!
                 inline_keyboard: [
                     [{ text: "▶ Open App", web_app: { url: "https://watch.miniearningjob.top/" } }],
                     [{ text: "📢 Channel", url: "https://t.me/onlineincomebeta" }],
-                    [{ text: "🌐 How To Work", url: "https://t.me/videochannelus/3" }]
+                    [{ text: "🌐 How To Work", url: "https://t.me/videochannelus/5" }]
                 ]
             }
         };
@@ -191,7 +191,7 @@ Tap START and your journey begins!
 
 async function checkAndRewardReferrals() {
     try {
-        // Query: frontendOpened == true AND rewardGiven == false
+        // Query: frontendOpened == true AND rewardGiven == true
         const q = query(
             collection(db, "users"),
             where("frontendOpened", "==", true),
